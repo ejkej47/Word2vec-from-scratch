@@ -6,41 +6,42 @@ PODACI
 
 Korišćen je text8 dataset (tekst sa Wikipedije).
 
-prvih 1.000.000 reči korišćeno za treniranje,
-formiran vokabular i frekvencije reči.
+-prvih 1.000.000 reči korišćeno za treniranje,
+-formiran vokabular i frekvencije reči.
+
 METODOLOGIJA
 
 PRIPREMA PODATAKA
 
-tokenizacija i formiranje vokabulara
+-tokenizacija i formiranje vokabulara
 
 SUBSAMPLING
 
-smanjenje uticaja često pojavljivanih reči
+-smanjenje uticaja često pojavljivanih reči
 
 GENERISANJE PAROVA
 
-dinamički kontekstualni prozor
-parovi (centralna reč, kontekst)
+-dinamički kontekstualni prozor
+-parovi (centralna reč, kontekst)
 
 MODEL
 
-matrice W1 i W2
-Xavier inicijalizacija
+-matrice W1 i W2
+-Xavier inicijalizacija
 
 NEGATIVE SAMPLING
 
-uzorkovanje negativnih primera (unigram distribucija)
+-uzorkovanje negativnih primera (unigram distribucija)
 
 TRENING
 
-SGD optimizacija
-smanjenje learning rate-a
+-SGD optimizacija
+-smanjenje learning rate-a
 
 EVALUACIJA
 
-cosine similarity između reči
+-cosine similarity između reči
 REZULTATI
-model uči osnovne semantičke odnose između reči,
-slične reči se grupišu u prostoru,
-loss opada tokom treniranja.
+-model uči osnovne semantičke odnose između reči,
+-slične reči se grupišu u prostoru,
+-loss opada tokom treniranja.
